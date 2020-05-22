@@ -16,7 +16,7 @@ Comandos GitHub básicos
 
 
 OPCIONES GRÁFICAS DE GIT:
-> Atlassian SourceTree
-> GitKraken																	//Mi elección
+- Atlassian SourceTree
+- GitKraken																	//Mi elección
 	 	 	 	 	 
 
