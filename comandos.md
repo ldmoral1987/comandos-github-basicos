@@ -1,19 +1,26 @@
 # GITHUB-COMMAND
 Comandos GitHub básicos
 
--git config --global user.name "nombre"      //Sirve para guardar el nombre con el que apareceremos al subir los archivos
+//Sirve para guardar el nombre con el que apareceremos al subir los archivos
+-git config --global user.name "nombre"      
 
--git config --global user.email correo@      //Dirección de correo que nos identifica
+//Dirección de correo que nos identifica
+-git config --global user.email correo@      
 
--git config --global diff.tool tkdiff        //Esta herramienta nos sirve para comparar diferencias entre ficheros
+//Esta herramienta nos sirve para comparar diferencias entre ficheros
+-git config --global diff.tool tkdiff        
 
--git config --global credential.helper manager      //Donde voy a guardar las crendenciales de repositorios remotos
+//Donde voy a guardar las crendenciales de repositorios remotos
+-git config --global credential.helper manager      
 
--git config --global core.editor nano        //Elegir editor de trabajo en este caso nano
+//Elegir editor de trabajo en este caso nano
+-git config --global core.editor nano        
 
-git init 				     //Inicializar repositorio
+//Inicializar repositorio
+git init 				     
 
-echo "#Primera línea de un fichero readme.dm" > readme.md	//Crear fichero readme
+//Crear fichero readme
+echo "#Primera línea de un fichero readme.dm" > readme.md	
 
 
 OPCIONES GRÁFICAS DE GIT:
