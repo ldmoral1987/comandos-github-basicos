@@ -75,12 +75,19 @@ git mv nombreFichero nombreFichero1
 
 git mv nombreFichero ruta
 
+//Mostrar informacion en colummnas de los commits tanto el hash, el nombre, el tiempo y el nombre.
 
-OPCIONES GRÁFICAS DE GIT:
+git log --pretty=format:"%h %an %ar - %s"
+
+//Mostrar información de un commit
+
+git show hashDelArchivo
+
+# OPCIONES GRÁFICAS DE GIT:
 - Atlassian SourceTree
 - GitKraken																	//Mi elección
 	 	 	 	 	 
 					 
-HERRAMIENTAS INTERESANTES 
+# HERRAMIENTAS INTERESANTES 
 - GITLAB
 
