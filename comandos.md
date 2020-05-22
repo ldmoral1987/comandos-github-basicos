@@ -11,12 +11,16 @@ Comandos GitHub básicos
 
 -git config --global core.editor nano        //Elegir editor de trabajo en este caso nano
 
+git init 				     //Inicializar repositorio
 
-
+echo "#Primera línea de un fichero readme.dm" > readme.md	//Crear fichero readme
 
 
 OPCIONES GRÁFICAS DE GIT:
 - Atlassian SourceTree
 - GitKraken																	//Mi elección
 	 	 	 	 	 
+					 
+HERRAMIENTAS INTERESANTES 
+- GITLAB
 
