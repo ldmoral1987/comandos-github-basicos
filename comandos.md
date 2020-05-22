@@ -57,6 +57,10 @@ nano .gitignore -> Dentro de este fichero si por ejemplo tenemos archivos .tmp, 
 
 -git diff
 
+//Comparar archivos en caso de que le hayamos hecho un git add 
+
+-git diff --staged
+
 //Muestra en la consola las diferencias entre los archivos
 
 -git difftool  -> Para una mejor visualización necesitaremos la herramienta tkdiff  se almacena dentro de la ruta GIT/usr/bin
