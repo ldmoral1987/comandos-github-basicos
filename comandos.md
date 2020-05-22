@@ -21,7 +21,6 @@ Comandos GitHub básicos
 
 -git config --global core.editor nano        
 
-
 //Inicializar repositorio
 
 git init 				     
@@ -30,7 +29,7 @@ git init
 
 echo "#Primera línea de un fichero readme.dm" > readme.md	
 
-//Añadir ficheros a git
+//Añadir ficheros al repositorio
 
 git add * or git add nombreFichero
 
@@ -38,9 +37,13 @@ git add * or git add nombreFichero
 
 git status
 
-//Añadir un commit
+//Añadir revisiones del proyecto
 
 git commit -m "nombre del commit"
+
+//Ver commits
+
+git log --oneline
 
 //Modificar un fichero de texto
 
@@ -50,6 +53,27 @@ less nombreFichero
 
 nano .gitignore -> Dentro de este fichero si por ejemplo tenemos archivos .tmp, dentro de ese fichero debemos de poner *.tmp
 
+//Comparar archivos para ver las modificaciones que se han realizado a un archivo modificado
+
+-git diff
+
+//Muestra en la consola las diferencias entre los archivos
+
+-git difftool  -> Para una mejor visualización necesitaremos la herramienta tkdiff  se almacena dentro de la ruta GIT/usr/bin
+
+//Borrar fichero
+
+rm nombreFichero
+
+//Mover renombrar o mover ficheros
+
+//Renombrar
+
+git mv nombreFichero nombreFichero1
+
+//Mover
+
+git mv nombreFichero ruta
 
 
 OPCIONES GRÁFICAS DE GIT:
