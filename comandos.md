@@ -5,91 +5,107 @@ Comandos GitHub básicos
 ```ssh
 -git config --global user.name "nombre"
 ```
-<br />
-### Dirección de correo que nos identifica
+#### Dirección de correo que nos identifica
 ```
 -git config --global user.email correo@
 ```
-<br />
-### Esta herramienta nos sirve para comparar diferencias entre ficheros
+
+#### Esta herramienta nos sirve para comparar diferencias entre ficheros
+```
 -git config --global diff.tool tkdiff        
-<br />
-### Donde voy a guardar las crendenciales de repositorios remotos
+```
+#### Donde voy a guardar las crendenciales de repositorios remotos
+```
 -git config --global credential.helper manager      
-<br />
-### Elegir editor de trabajo en este caso nano
+```
+#### Elegir editor de trabajo en este caso nano
+```
 -git config --global core.editor nano        
-<br />
-### Inicializar repositorio
+```
+#### Inicializar repositorio
+```
 git init 				     
-<br />
-### Crear fichero readme o cualquier otro
+```
+#### Crear fichero readme o cualquier otro
+```
 echo "#Primera línea de un fichero readme.dm" > readme.md	
-<br />
+```
 ### Ver archivos dentro de la carpeta
+```
 ls -lart
 ls -l
-<br />
+```
 ### Añadir ficheros al repositorio
 git add * or git add nombreFichero
-<br />
+
 ### Comprobar estado del fichero
 git status
-<br />
+
 ### Añadir revisiones del proyecto
 git commit -m "nombre del commit"
-<br />
+
 ### Ver commits
 git log --oneline
-<br />
+
 ### Modificar un fichero de texto
 less nombreFichero
-<br />
+
 ### Para ignorar ficheros tenemos que crear el fichero gitignore
 nano .gitignore -> Dentro de este fichero si por ejemplo tenemos archivos .tmp, dentro de ese fichero debemos de poner *.tmp
-<br />
+
 ### Comparar archivos para ver las modificaciones que se han realizado a un archivo modificado
 -git diff
-<br />
+
 ### Comparar archivos en caso de que le hayamos hecho un git add 
 -git diff --staged
-<br />
+
 ### Muestra en la consola las diferencias entre los archivos
 -git difftool  -> Para una mejor visualización necesitaremos la herramienta tkdiff  se almacena dentro de la ruta GIT/usr/bin
-<br />
-### Borrar fichero
+
+#### Borrar fichero
 rm nombreFichero
-<br />
+
 ### Mover renombrar o mover ficheros
-
+```
+git mv nombreFichero <ruta>
+```
 #### Renombrar
+```
 git mv nombreFichero nombreFichero1
-<br />
+```
 #### Mover
+```
 git mv nombreFichero ruta
-<br />
-### Mostrar informacion en colummnas de los commits tanto el hash, el nombre, el tiempo y el nombre.
+```
+#### Mostrar informacion en colummnas de los commits tanto el hash, el nombre, el tiempo y el nombre.
+```
 git log --pretty=format:"%h %an %ar - %s"
-<br />
-### Mostrar información de un commit
+```
+#### Mostrar información de un commit
+```
 git show hashDelArchivo
-<br />
-### Conectarse a un repositorio
+```
+#### Conectarse a un repositorio
+```
 git remote add origin rutaDeElProyectoDeGit
-<br />
-### Recuperar archivos del repositorio
+```
+#### Recuperar archivos del repositorio
+```
 git fetch origin
-<br />
-### Descargar archivos en origen master
+```
+#### Descargar archivos en origen master
+```
 git pull origin master -> Esto se descarga en tu propia rama de master
-
-### Descargar archivos en el directorio actual
+```
+#### Descargar archivos en el directorio actual
+```
 git clone url .
-
-### Subir archivos 
+```
+#### Subir archivos 
+```
 git push 
+```
 
-<br /><br />
 ## OPCIONES GRÁFICAS DE GIT:
 - Atlassian SourceTree
 - GitKraken	//Mi elección
