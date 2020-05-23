@@ -71,9 +71,14 @@ git diff
 ```
 -git diff --staged
 ```
+
 #### Muestra en la consola las diferencias entre los archivos
 ```
 git difftool  -> Para una mejor visualización necesitaremos la herramienta tkdiff  se almacena dentro de la ruta GIT/usr/bin
+```
+#### Muestra la diferencias entre los archivos almacenados en el staged changes
+```
+git diff --cached
 ```
 #### Borrar fichero
 ```
@@ -173,7 +178,14 @@ git branch <nombre> master
 git checkout 'nombre'
 ```
 
-
+## BLAME
+#### Mostrar quién modificó un fichero
+```
+git blame <nombreArchivo>
+```
+#### Filtrar en un rango las líneas que han sido modificadas y por quien
+```
+git blame -L 5,9 <nombreArchivo>
 
 
 # OPCIONES GRÁFICAS DE GIT:
