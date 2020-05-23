@@ -2,7 +2,7 @@
 Comandos GitHub básicos
 
 #### Sirve para guardar el nombre con el que apareceremos al subir los archivos
--git config --global user.name "nombre"      
+``-git config --global user.name "nombre"``      
 <br />
 ### Dirección de correo que nos identifica
 -git config --global user.email correo@      
@@ -21,6 +21,10 @@ git init
 <br />
 ### Crear fichero readme o cualquier otro
 echo "#Primera línea de un fichero readme.dm" > readme.md	
+<br />
+### Ver archivos dentro de la carpeta
+ls -lart
+ls -l
 <br />
 ### Añadir ficheros al repositorio
 git add * or git add nombreFichero
@@ -65,6 +69,22 @@ git log --pretty=format:"%h %an %ar - %s"
 <br />
 ### Mostrar información de un commit
 git show hashDelArchivo
+<br />
+### Conectarse a un repositorio
+git remote add origin rutaDeElProyectoDeGit
+<br />
+### Recuperar archivos del repositorio
+git fetch origin
+<br />
+### Descargar archivos en origen master
+git pull origin master -> Esto se descarga en tu propia rama de master
+
+### Descargar archivos en el directorio actual
+git clone url .
+
+### Subir archivos 
+git push 
+
 <br /><br />
 ## OPCIONES GRÁFICAS DE GIT:
 - Atlassian SourceTree
