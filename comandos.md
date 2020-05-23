@@ -7,7 +7,9 @@ Comandos GitHub básicos
 ```  
 <br />
 ### Dirección de correo que nos identifica
--git config --global user.email correo@      
+```
+-git config --global user.email correo@
+```
 <br />
 ### Esta herramienta nos sirve para comparar diferencias entre ficheros
 -git config --global diff.tool tkdiff        
