@@ -3,24 +3,24 @@ Comandos GitHub básicos
 
 ### Sirve para guardar el nombre con el que apareceremos al subir los archivos
 ```
--git config --global user.name "nombre"
+git config --global user.name "nombre"
 ```
 ### Dirección de correo que nos identifica
 ```
--git config --global user.email correo@
+git config --global user.email correo@
 ```
 
 ### Esta herramienta nos sirve para comparar diferencias entre ficheros
 ```
--git config --global diff.tool tkdiff        
+git config --global diff.tool tkdiff        
 ```
 ### Donde voy a guardar las crendenciales de repositorios remotos
 ```
--git config --global credential.helper manager      
+git config --global credential.helper manager      
 ```
 ### Elegir editor de trabajo en este caso nano
 ```
--git config --global core.editor nano        
+git config --global core.editor nano        
 ```
 ### Inicializar repositorio
 ```
@@ -63,7 +63,7 @@ nano .gitignore -> Dentro de este fichero si por ejemplo tenemos archivos .tmp, 
 ```
 ### Comparar archivos para ver las modificaciones que se han realizado a un archivo modificado
 ```
--git diff
+git diff
 ```
 ### Comparar archivos en caso de que le hayamos hecho un git add 
 ```
@@ -71,7 +71,7 @@ nano .gitignore -> Dentro de este fichero si por ejemplo tenemos archivos .tmp, 
 ```
 ### Muestra en la consola las diferencias entre los archivos
 ```
--git difftool  -> Para una mejor visualización necesitaremos la herramienta tkdiff  se almacena dentro de la ruta GIT/usr/bin
+git difftool  -> Para una mejor visualización necesitaremos la herramienta tkdiff  se almacena dentro de la ruta GIT/usr/bin
 ```
 ### Borrar fichero
 ```
