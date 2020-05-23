@@ -1,97 +1,76 @@
 # GITHUB-COMMAND
 Comandos GitHub básicos
 
-//Sirve para guardar el nombre con el que apareceremos al subir los archivos
-
+#### Sirve para guardar el nombre con el que apareceremos al subir los archivos
 -git config --global user.name "nombre"      
-
-//Dirección de correo que nos identifica
-
+<br />
+### Dirección de correo que nos identifica
 -git config --global user.email correo@      
-
-//Esta herramienta nos sirve para comparar diferencias entre ficheros
-
+<br />
+### Esta herramienta nos sirve para comparar diferencias entre ficheros
 -git config --global diff.tool tkdiff        
-
-//Donde voy a guardar las crendenciales de repositorios remotos
-
+<br />
+### Donde voy a guardar las crendenciales de repositorios remotos
 -git config --global credential.helper manager      
-
-//Elegir editor de trabajo en este caso nano
-
+<br />
+### Elegir editor de trabajo en este caso nano
 -git config --global core.editor nano        
-
-//Inicializar repositorio
-
+<br />
+### Inicializar repositorio
 git init 				     
-
-//Crear fichero readme o cualquier otro
-
+<br />
+### Crear fichero readme o cualquier otro
 echo "#Primera línea de un fichero readme.dm" > readme.md	
-
-//Añadir ficheros al repositorio
-
+<br />
+### Añadir ficheros al repositorio
 git add * or git add nombreFichero
-
-//Comprobar estado del fichero
-
+<br />
+### Comprobar estado del fichero
 git status
-
-//Añadir revisiones del proyecto
-
+<br />
+### Añadir revisiones del proyecto
 git commit -m "nombre del commit"
-
-//Ver commits
-
+<br />
+### Ver commits
 git log --oneline
-
-//Modificar un fichero de texto
-
+<br />
+### Modificar un fichero de texto
 less nombreFichero
-
-//Para ignorar ficheros tenemos que crear el fichero gitignore
-
+<br />
+### Para ignorar ficheros tenemos que crear el fichero gitignore
 nano .gitignore -> Dentro de este fichero si por ejemplo tenemos archivos .tmp, dentro de ese fichero debemos de poner *.tmp
-
-//Comparar archivos para ver las modificaciones que se han realizado a un archivo modificado
-
+<br />
+### Comparar archivos para ver las modificaciones que se han realizado a un archivo modificado
 -git diff
-
-//Comparar archivos en caso de que le hayamos hecho un git add 
-
+<br />
+### Comparar archivos en caso de que le hayamos hecho un git add 
 -git diff --staged
-
-//Muestra en la consola las diferencias entre los archivos
-
+<br />
+### Muestra en la consola las diferencias entre los archivos
 -git difftool  -> Para una mejor visualización necesitaremos la herramienta tkdiff  se almacena dentro de la ruta GIT/usr/bin
-
-//Borrar fichero
-
+<br />
+### Borrar fichero
 rm nombreFichero
+<br />
+### Mover renombrar o mover ficheros
 
-//Mover renombrar o mover ficheros
-
-//Renombrar
-
+#### Renombrar
 git mv nombreFichero nombreFichero1
-
-//Mover
-
+<br />
+#### Mover
 git mv nombreFichero ruta
-
-//Mostrar informacion en colummnas de los commits tanto el hash, el nombre, el tiempo y el nombre.
-
+<br />
+### Mostrar informacion en colummnas de los commits tanto el hash, el nombre, el tiempo y el nombre.
 git log --pretty=format:"%h %an %ar - %s"
-
-//Mostrar información de un commit
-
+<br />
+###Mostrar información de un commit
 git show hashDelArchivo
-
-# OPCIONES GRÁFICAS DE GIT:
+<br /><br />
+## OPCIONES GRÁFICAS DE GIT:
 - Atlassian SourceTree
-- GitKraken																	//Mi elección
-	 	 	 	 	 
+- GitKraken	//Mi elección
+<br /><br />	 	 	 	 	 
 					 
-# HERRAMIENTAS INTERESANTES 
+## HERRAMIENTAS INTERESANTES 
 - GITLAB
 
