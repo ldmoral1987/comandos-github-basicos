@@ -36,64 +36,76 @@ ls -lart
 ls -l
 ```
 ### Añadir ficheros al repositorio
+```
 git add * or git add nombreFichero
-
+```
 ### Comprobar estado del fichero
+```
 git status
+```
 
 ### Añadir revisiones del proyecto
+```
 git commit -m "nombre del commit"
+```
 
 ### Ver commits
+```
 git log --oneline
-
+```
 ### Modificar un fichero de texto
+```
 less nombreFichero
-
+```
 ### Para ignorar ficheros tenemos que crear el fichero gitignore
+```
 nano .gitignore -> Dentro de este fichero si por ejemplo tenemos archivos .tmp, dentro de ese fichero debemos de poner *.tmp
-
+```
 ### Comparar archivos para ver las modificaciones que se han realizado a un archivo modificado
+```
 -git diff
-
+```
 ### Comparar archivos en caso de que le hayamos hecho un git add 
+```
 -git diff --staged
-
+```
 ### Muestra en la consola las diferencias entre los archivos
+```
 -git difftool  -> Para una mejor visualización necesitaremos la herramienta tkdiff  se almacena dentro de la ruta GIT/usr/bin
-
-#### Borrar fichero
+```
+### Borrar fichero
+```
 rm nombreFichero
-
+```
 ### Mover renombrar o mover ficheros
 ```
 git mv nombreFichero <ruta>
 ```
-#### Renombrar
+### Renombrar
 ```
 git mv nombreFichero nombreFichero1
 ```
-#### Mover
+### Mover
 ```
 git mv nombreFichero ruta
 ```
-#### Mostrar informacion en colummnas de los commits tanto el hash, el nombre, el tiempo y el nombre.
+### Mostrar informacion en colummnas de los commits tanto el hash, el nombre, el tiempo y el nombre.
 ```
 git log --pretty=format:"%h %an %ar - %s"
 ```
-#### Mostrar información de un commit
+### Mostrar información de un commit
 ```
 git show hashDelArchivo
 ```
-#### Conectarse a un repositorio
+### Conectarse a un repositorio
 ```
 git remote add origin rutaDeElProyectoDeGit
 ```
-#### Recuperar archivos del repositorio
+### Recuperar archivos del repositorio
 ```
 git fetch origin
 ```
-#### Descargar archivos en origen master
+### Descargar archivos en origen master
 ```
 git pull origin master -> Esto se descarga en tu propia rama de master
 ```
