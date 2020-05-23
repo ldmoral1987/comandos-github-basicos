@@ -2,7 +2,7 @@
 Comandos GitHub básicos
 
 #### Sirve para guardar el nombre con el que apareceremos al subir los archivos
-```
+```ssh
 -git config --global user.name "nombre"
 ```
 <br />
