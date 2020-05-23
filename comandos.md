@@ -186,7 +186,7 @@ git blame <nombreArchivo>
 #### Filtrar en un rango las líneas que han sido modificadas y por quien
 ```
 git blame -L 5,9 <nombreArchivo>
-
+```
 
 # OPCIONES GRÁFICAS DE GIT:
 - Atlassian SourceTree
