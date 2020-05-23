@@ -63,7 +63,7 @@ git mv nombreFichero ruta
 ### Mostrar informacion en colummnas de los commits tanto el hash, el nombre, el tiempo y el nombre.
 git log --pretty=format:"%h %an %ar - %s"
 <br />
-###Mostrar información de un commit
+### Mostrar información de un commit
 git show hashDelArchivo
 <br /><br />
 ## OPCIONES GRÁFICAS DE GIT:
