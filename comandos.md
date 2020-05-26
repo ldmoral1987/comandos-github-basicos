@@ -162,7 +162,7 @@ git revert <hashDelCommit>
 ```
 git revert HEAD...HEAD~2 --no-edit
 ```
-## Cherry Pick
+## CHERRY PICK
 #### Resolver conflictos con cherry-pick
 ```
 git cherry-pick new_branch~1
@@ -203,6 +203,8 @@ git blame <nombreArchivo>
 ```
 git blame -L 5,9 <nombreArchivo>
 ```
+
+
 
 # OPCIONES GRÁFICAS DE GIT:
 - Atlassian SourceTree
