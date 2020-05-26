@@ -203,7 +203,24 @@ git blame <nombreArchivo>
 ```
 git blame -L 5,9 <nombreArchivo>
 ```
-
+## REBASE
+#### Nos permite sacar una pantalla en la que gestionamos los commits
+```
+git rebase --interactive --root
+```
+## ETIQUETAS O TAG
+#### Ver lista de etiquetas 
+```
+git tag
+```
+#### Crear etiquetas anotadas 
+```
+git tag -a v0.0 -, 'version 0.0'
+```
+####~Etiqueta ligera
+```
+git tag v0.1-lw
+```
 
 
 # OPCIONES GRÁFICAS DE GIT:
