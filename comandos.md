@@ -162,12 +162,28 @@ git revert <hashDelCommit>
 ```
 git revert HEAD...HEAD~2 --no-edit
 ```
+## Cherry Pick
+#### Resolver conflictos con cherry-pick
+```
+git cherry-pick new_branch~1
+```
+#### Despues del conflicto
+```
+git cherry-pick --continue
+```
+#### Revertir lo que hemos avanzando con el cherry-pick
+```
+git cherry-pick --abort
+```
 
 #### No sé para que sirve pero ahí está
 ```
 git pull origin master –allow-unrelated-histories
 ```
-
+#### Rellenar autómaticamente 
+```
+git checkout --theirs .
+```
 ## RAMAS O BRANCH
 #### Crear una nueva rama
 ```
